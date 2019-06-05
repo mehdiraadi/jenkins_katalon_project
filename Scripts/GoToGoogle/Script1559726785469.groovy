@@ -15,5 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.delay(1)
 
+WebUI.callTestCase(findTestCase('OpenBrowser'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.navigateToUrl('www.google.se')
 
